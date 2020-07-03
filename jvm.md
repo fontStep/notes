@@ -74,7 +74,7 @@ SJF抢占式版本，即当一个新就绪的进程比当前运行进程具有�
 
 # JVM内存结构
 
-![preview](./imags/java内存结构.png)
+![java内存结构](https://raw.githubusercontent.com/fontStep/photos/master/20200703101640.png)
 
 ## 程序计数器
 
@@ -141,7 +141,7 @@ Java虚拟机栈是线程私有的,**生命周期和线程一致**，描述Java�
 
 ### 栈桢
 
-![img](./imags/栈桢结构.png)
+![栈桢结构](https://raw.githubusercontent.com/fontStep/photos/master/20200703101710.png)
 
 #### 局部变量表
 
@@ -403,7 +403,7 @@ public static void main(java.lang.String[]);
 
 在感念模型里,栈桢之间时应该是相互独立的,不过大多数虚拟机都会做一些优化处理，使局部变量表和操作数栈之间有部分重叠,这样在进行方法调用的时候可以直接共用参数，而不需要做额外的参数复制等工作
 
-![img](./imags/局部变量表和操作数栈重叠.png)
+![局部变量表和操作数栈重叠](https://raw.githubusercontent.com/fontStep/photos/master/20200703101735.png)
 
 ```java
 package com.wjw.limiting.mains;
@@ -614,7 +614,7 @@ invokeMethodCount:[18235]
 
 ### 内存结构
 
-![image-20200516110239002](./imags/Java堆运行时内存结构.png)
+![Java堆运行时内存结构](https://raw.githubusercontent.com/fontStep/photos/master/20200703101756.png)
 
 年轻代: 主要用来存放新生的对象,一般占整个堆内存的1/3,年轻代又分为eden区,from区,to区,采用的GC算法为复制算法
 
@@ -632,13 +632,13 @@ ServivorTo区：保留了一次GC过程中的幸存者
 
 主要包括对象头，实例数据，对齐填充这三块区域
 
-![img](./imags/java对象布局.png)
+![java对象布局](https://raw.githubusercontent.com/fontStep/photos/master/20200703101814.png)
 
 
 
 #### 压缩指针
 
-![image-20200516183513888](./imags/java对象头中一般对象指针.png)
+![java对象头中一般对象指针](https://raw.githubusercontent.com/fontStep/photos/master/20200703101839.png)
 
 理解
 
@@ -817,7 +817,7 @@ com.wjw.limiting.mains.T01 object internals:
 
 Mark word记录了对象和锁有关的信息,32bit的情况下
 
-![image-20200516171430467](./imags/markword结构.png)
+![markword结构](https://raw.githubusercontent.com/fontStep/photos/master/20200703101858.png)
 
 ##### synchronized锁的升级过程
 
@@ -1019,8 +1019,6 @@ Exception in thread "main" java.lang.OutOfMemoryError: Java heap space
 
 
 # JVM命令
-
-
 
 
 
