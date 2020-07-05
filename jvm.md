@@ -1523,6 +1523,10 @@ $ jmap -permstat 28920
 
 强制模式。如果指定的pid没有响应，请使用jmap -dump或jmap -histo选项。此模式下，不支持live子选项。
 
+## 阿里巴巴开源jvm工具 arthas
+
+参考地址 https://alibaba.github.io/arthas/
+
 
 
 
